@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.aa{
+			border:1px solid black;
+			padding:20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid"><br>
+<div class="row bb">
+	<div class="col-lg-3 col-md-6 col-sm-3 aa text-justify">Web design is an essential part of everyone may be in any form as social media, entertainment and downloading things for educational purpose in the form of a website. So web design courses give the real picture of yourself so everybody can get good knowledge about our product or business. Everyone wants a good website and he needs the best website designerWeb design is an essential part of everyone may be in any form as social media, entertainment and downloading things for educational purpose in the form of a website. So web design courses give the real picture of yourself so everybody can get good knowledge about our product or business. Everyone wants a good website and he needs the best website designer  </div>
+	<div class="col-lg-3 col-md-6 col-sm-3 aa text-justify">Web design is an essential part of everyone may be in any form as social media, entertainment and downloading things for educational purpose in the form of a website. So web design courses give the real picture of yourself so everybody can get good knowledge about our product or business. Everyone wants a good website and he needs the best website designer </div>
+	<div class="col-lg-3 col-md-6 col-sm-3 aa text-justify">Web design is an essential part of everyone may be in any form as social media, entertainment and downloading things for educational purpose in the form of a website. So web design courses give the real picture of yourself so everybody can get good knowledge about our product or business. Everyone wants a good website and he needs the best website designer </div>
+	<div class="col-lg-3 col-md-6 col-sm-3 aa text-justify">Web design is an essential part of everyone may be in any form as social media, entertainment and downloading things for educational purpose in the form of a website. So web design courses give the real picture of yourself so everybody can get good knowledge about our product or business. Everyone wants a good website and he needs the best website designer </div>
+	</div>
+	</div>
+	<script>
+		 $('.bb').each(function(){  
+      var highestBox = 0;
+      $('.aa', this).each(function(){
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height(); 
+        }
+      });  
+            
+      $('.aa',this).height(highestBox);
+                    
+    }); 
+	</script>
+</body>
+</html>
