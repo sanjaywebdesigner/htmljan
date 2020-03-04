@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1"><br>
+	<input type="button" onclick="ss()" value="+">
+	<p id="a2"></p>
+	
+	
+	<script>
+		
+		function ss()
+		{
+			a=Number(document.getElementById("a1").value);
+			if(a%2==0)
+				{
+					document.getElementById("a2").innerHTML="even";
+				}
+			else{
+				document.getElementById("a2").innerHTML="odd";
+			}
+		}
+			
+	</script>
+</body>
+</html>
