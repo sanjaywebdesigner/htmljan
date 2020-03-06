@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1"><br>
+	<input type="text" id="a2"><br>
+	
+	<input type="button" onclick="ss()" value="+">
+	
+	
+	<script>
+		
+		function ss()
+		{
+			a=Number(document.getElementById("a1").value);
+			b=Number(document.getElementById("a2").value);
+			c=a+b;
+			b=c-b;
+			a=c-b;
+			document.getElementById("a1").value=a;
+			document.getElementById("a2").value=b;
+		}
+			
+	</script>
+	<!--   
+==   comarrision operator
+> greatet than
+< less than
+>= greater than and equal to
+<= less than and equal to
+=  value assign
+-->
+</body>
+</html>
