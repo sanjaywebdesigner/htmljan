@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onload="dd()">
+	<p id="gg"></p>
+	<script>
+		function dd()
+		{
+			setInterval(ss,1000);
+		}
+	function ss()
+		{
+			a=new Date();
+			a1=a.getHours();
+			if(a1>12)
+				{
+					a1=a1-12;
+				}
+			a2=a.getMinutes();
+b=a.getSeconds();
+	d=a1+" : "+a2+" : "	+b	
+			
+			document.getElementById("gg").innerHTML=d;
+		}
+	
+	</script>
+</body>
+</html>
