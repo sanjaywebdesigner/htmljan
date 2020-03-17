@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onload="hh()">
+	<p id="dd"></p>
+	<script>
+		function hh()
+		{
+			setInterval(ss,1000);
+		}
+		function ss()
+		{
+	a=new Date();
+		b=a.getHours();
+		c=a.getMinutes();
+		d=a.getSeconds();
+		if(b>12)
+			{
+				b=b-12;
+			}
+		e=b+" : "+c+" : "+d;
+		document.getElementById("dd").innerHTML=e;
+			}
+	</script>
+</body>
+</html>

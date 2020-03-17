@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onload="hh()">
+	<p id="dd"></p>
+	<script>
+		function hh()
+		{
+			setInterval(ss,1000);
+		}
+		function ss()
+		{
+	a=new Date();
+			b1=5;
+			
+		b=a.getHours();
+		c=a.getMinutes();
+		d=a.getSeconds();
+		if(b>12)
+			{
+				b=b-12;
+			}
+			d1a=60-d;
+			c1a=59-c;
+			b1a=5-1-b;
+		e=b1a+" : "+c1a+" : "+d1a;
+		document.getElementById("dd").innerHTML=e;
+			}
+	</script>
+</body>
+</html>
