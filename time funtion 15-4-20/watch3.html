@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onLoad="gg1()">
+	<p id="gg"></p>
+	<script>
+		function gg1()
+		{
+		setInterval(ss,1000);	
+		}
+		function ss()
+		{
+		a=new Date();
+		hour=a.getHours();
+		if(hour>11)
+			{
+				hour=hour-12;
+				d="PM";
+			}
+			else{
+				d="AM";
+			}
+		minute=a.getMinutes();
+		second=a.getSeconds();
+			if(second<10)
+				{
+					second="0"+second;
+				}
+			if(minute<10)
+				{
+					minute="0"+minute;
+				}
+			if(hour<10)
+				{
+					hour="0"+hour;
+				}
+		b=hour+" : "+minute+" : "+second+" "+d;
+		document.getElementById("gg").innerHTML=b;
+		}
+	</script>
+</body>
+</html>
