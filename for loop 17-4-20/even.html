@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1"><br>
+	<input type="text" id="a2"><br>
+	<input type="button" onclick="ss()">
+	<p id="a3"></p>
+	<script>
+		function ss()
+		{
+			document.getElementById("a3").innerHTML="";
+		a=Number(document.getElementById("a1").value);
+		b=Number(document.getElementById("a2").value);	
+			
+		if(a%2==1)
+			{
+				a=a+1;
+			}
+		for(i=a;i<=b;i=i+2)
+			{
+				
+				document.getElementById("a3").innerHTML+=i+"<br>";
+			}
+		}
+	</script>
+	<!--
+first condition  starting point
+last condition  final condition
+increment or decrement
+i++  1 increment
+i=i+2  2 increment
+i--  1 derement
+i=i-2  2 decrement
+-->
+</body>
+</html>
