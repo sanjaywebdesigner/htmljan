@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="s1"><br>
+	<input type="button" onclick="aa()">
+	<p id="a2"></p>
+	<script>
+		function aa()
+		{
+	a=document.getElementById("s1").value;
+		b=a.charAt(0);
+		if(b=="9" || b=="8" || b=="7")
+			{
+				document.getElementById("a2").innerHTML="correct";
+			}
+		else{
+			document.getElementById("a2").innerHTML="please enter 7,8,9 in starting";
+		}
+		}
+	</script>
+</body>
+</html>
