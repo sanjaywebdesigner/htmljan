@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="s1"><br>
+	<input type="button" onclick="ss()">
+	<p id="s2"></p>
+	<script>
+		function ss()
+		{
+		a=document.getElementById("s1").value;
+       b=a.charAt(0);
+		c=b.toUpperCase();
+		document.getElementById("s2").innerHTML=c;
+		d=a.length;
+		for(i=1;i<d;i++)
+			{
+				b=a.charAt(i);
+				c=b.toLowerCase();
+				document.getElementById("s2").innerHTML+=c;
+			}
+		
+		}
+	
+		
+		</script>
+</body>
+</html>
