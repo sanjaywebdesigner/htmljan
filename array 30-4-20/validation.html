@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.a2{
+			width:50px;
+			height:50px;
+		}
+		.d1{
+			
+			background-image:url("cross.jpg");
+		}
+		.d2{
+			
+			background-image:url("right.jpg");
+		}
+		
+	</style>
+</head>
+
+<body>
+	<input type="text" onkeyup="ss()" id="a1">
+	<div class="a2"></div>
+	<script>
+	function ss()
+		{
+			a=document.getElementById("a1").value;
+			c=a.length;
+			b=document.querySelector(".a2");
+			if(c<8)
+				{
+					b.classList.add("d1");
+					b.classList.remove("d2");	
+				}
+			else 
+				{
+				b.classList.add("d2");	
+				}
+			
+		}
+		
+	</script>
+</body>
+</html>
+
+<!---
+color ke jagah 
+x ya right
+-->
