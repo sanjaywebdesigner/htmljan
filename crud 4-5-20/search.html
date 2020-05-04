@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1" placeholder="value to add"><br>
+	<input type="text" id="a2" placeholder="value to search"><br>
+	<input type="button" onclick="ss()" value="add"><input type="button" onclick="ss1()" value="search">
+	<h1></h1>
+	<script>
+	function ss()
+		{
+			a=document.getElementById("a1").value;
+			b=document.createElement("p");
+			b.innerHTML=a;
+			document.body.appendChild(b);
+		}
+		function ss1()
+		{
+			temp=0;
+			cc=document.getElementById("a2").value;
+			c=document.querySelectorAll("p");
+			for(i=0;i<c.length;i++)
+				{
+					if(c[i].innerHTML==cc)
+						{
+						temp=1;	
+						}
+				}
+			if(temp==0)
+				{
+					document.querySelector("h1").innerHTML="value not found";
+				}
+			else{
+				document.querySelector("h1").innerHTML="value found";
+			}
+			
+		}
+	</script>
+</body>
+</html>

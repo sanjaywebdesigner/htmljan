@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<!doctype html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#gg{
+			width: 1008px;
+			height: 52px;
+			
+		}
+		.b1{
+			width: 1008px;
+			height: 52px;
+		}
+		.b2{
+			width: 250px;
+			height: 50px;
+			float: left;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+	<input type="text" id="a1" placeholder="name"><br>
+	<input type="text" id="a2" placeholder="phone"><br>
+	<input type="text" id="a3" placeholder="gender"><br>
+	<input type="text" id="a4" placeholder="emailid"><br>
+	<input type="button" onclick="btn()">
+	<div id="gg"></div>
+	<body>
+	<script>
+		function btn()
+		{
+			aa1=document.getElementById("a1").value;
+			aa2=document.getElementById("a2").value;
+			aa3=document.getElementById("a3").value;
+			aa4=document.getElementById("a4").value;
+			
+			b=document.createElement("div");
+			b.classList.add("b1");
+			
+			d1=document.createElement("div");
+			d1.classList.add("b2");
+			d1.innerHTML=aa1;
+			b.appendChild(d1);
+			
+			d2=document.createElement("div");
+			d2.classList.add("b2");
+			d2.innerHTML=aa2;
+			b.appendChild(d2);
+			
+			d3=document.createElement("div");
+			d3.classList.add("b2");
+			d3.innerHTML=aa3;
+			b.appendChild(d3);
+			
+			d4=document.createElement("div");
+			d4.classList.add("b2");
+			d4.innerHTML=aa4;
+			b.appendChild(d4);
+			
+			c=document.getElementById("gg");
+			c.appendChild(b);
+			
+		}
+	</script>
+	</body>
+</html>
+</body>
+</html>
