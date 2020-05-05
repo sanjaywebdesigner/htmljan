@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1" placeholder="insert"><br>
+	<input type="text" id="a2" placeholder="search"><br>
+	<input type="text" id="a3" placeholder="update">
+	<br><input type="button" onclick="ss()" value="insert"><input type="button" onclick="ss1()" value="update">
+	<p></p>
+	<script>
+	function ss()
+		{
+			a=document.getElementById("a1").value;
+			b=document.createElement("h1");
+			b.innerHTML=a;
+			document.body.appendChild(b);
+		}
+		function ss1()
+		{
+			
+			
+			aa=document.getElementById("a2").value;
+			aa1=document.getElementById("a3").value;
+			c=document.querySelectorAll("h1");
+			for(i=0;i<c.length;i++)
+				{
+					if(c[i].innerHTML==aa)
+						{
+						c[i].innerHTML=aa1;	
+						}
+				}
+			
+		}
+	</script>
+</body>
+</html>

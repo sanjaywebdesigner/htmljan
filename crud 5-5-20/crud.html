@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1" placeholder="insert"><br>
+	<input type="text" id="a2" placeholder="search"><br>
+	<input type="text" id="a3" placeholder="update"><br>
+	<input type="text" id="a4" placeholder="delete"><br>
+	<input type="button" onclick="ss()" value="insert"><input type="button" onclick="ss1()" value="search"><input type="button" onclick="ss2()" value="update"><input type="button" onclick="ss3()" value="delete">
+	<p></p>
+	<script>
+	function ss()
+		{
+			a=document.getElementById("a1").value;
+			b=document.createElement("h1");
+			b.innerHTML=a;
+			document.body.appendChild(b);
+		}
+		function ss1()
+		{
+			h=0;
+			aa=document.getElementById("a2").value;
+			c=document.querySelectorAll("h1");
+			for(i=0;i<c.length;i++)
+				{
+					if(c[i].innerHTML==aa)
+						{
+							h++;
+						}
+				}
+			if(h==0)
+				{
+				document.querySelector("p").innerHTML="not Found";	
+				}
+			else{
+				document.querySelector("p").innerHTML="Found";
+			}
+		}
+		function ss2()
+		{
+			
+			aa=document.getElementById("a2").value;
+			aa1=document.getElementById("a3").value;
+			c=document.querySelectorAll("h1");
+			for(i=0;i<c.length;i++)
+				{
+					if(c[i].innerHTML==aa)
+						{
+						c[i].innerHTML=aa1;	
+						}
+				}
+			
+		}
+		function ss3()
+		{
+			
+			aa2=document.getElementById("a4").value;
+			
+			c=document.querySelectorAll("h1");
+			for(i=0;i<c.length;i++)
+				{
+					if(c[i].innerHTML==aa2)
+						{
+						document.body.removeChild(c[i]);
+						}
+				}
+			
+		}
+	</script>
+</body>
+</html>
