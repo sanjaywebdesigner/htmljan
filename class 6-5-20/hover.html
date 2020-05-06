@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<img src="image1.jpg" onMouseDown="ss()" onMouseOut="ss1()">
+	
+	<script>
+	function ss()
+		{
+			a=document.querySelector("img");
+			a.src="image2.jpg";
+		}
+		function ss1()
+		{
+			a=document.querySelector("img");
+			a.src="image1.jpg";
+		}
+	</script>
+</body>
+</html>
