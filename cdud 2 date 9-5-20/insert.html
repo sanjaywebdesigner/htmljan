@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.s1{
+			width:1008px;
+			height:52px;
+		}
+		.s2{
+			width:250px;
+			height:50px;
+			border:1px solid black;
+			float:left;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="text" placeholder="name" id="a1"><br>
+	<input type="text" placeholder="name" id="a2"><br>
+	<input type="text" placeholder="name" id="a3"><br>
+	<input type="text" placeholder="name" id="a4"><br>
+	<input type="button" onclick="ss()" value="insert">
+	<script>
+	function ss()
+		{
+			aa1=document.getElementById("a1").value;
+			aa2=document.getElementById("a2").value;
+			aa3=document.getElementById("a3").value;
+			aa4=document.getElementById("a4").value;
+			
+			b=document.createElement("div");
+			b.classList.add("s1");
+			
+			c1=document.createElement("div");
+			c1.classList.add("s2");
+			c1.innerHTML=aa1;
+			b.appendChild(c1);
+			
+			c2=document.createElement("div");
+			c2.classList.add("s2");
+			c2.innerHTML=aa2;
+			b.appendChild(c2);
+			
+			c3=document.createElement("div");
+			c3.classList.add("s2");
+			c3.innerHTML=aa3;
+			b.appendChild(c3);
+			
+			c4=document.createElement("div");
+			c4.classList.add("s2");
+			c4.innerHTML=aa4;
+			b.appendChild(c4);
+			
+			document.body.appendChild(b);
+		}
+	</script>
+</body>
+</html>
