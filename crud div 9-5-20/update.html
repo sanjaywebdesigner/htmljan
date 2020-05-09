@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.s1{
+			width:1008px;
+			height:52px;
+		}
+		.s2{
+			width:250px;
+			height:50px;
+			border:1px solid black;
+			float:left;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="text" placeholder="name" id="a1"><br>
+	<input type="text" placeholder="gender" id="a2"><br>
+	<input type="text" placeholder="email" id="a3"><br>
+	<input type="text" placeholder="phone" id="a4"><br>
+	<input type="text" placeholder="value to search" id="a5"><br>
+	<input type="text" placeholder="value of gender to update" id="a6"><br>
+	<input type="text" placeholder="value of email to update" id="a7"><br>
+	<input type="text" placeholder="value of phone to update" id="a8"><br>
+	<input type="button" onclick="ss()" value="insert"><input type="button" onclick="ss1()" value="update">
+	<script>
+	function ss()
+		{
+			aa1=document.getElementById("a1").value;
+			aa2=document.getElementById("a2").value;
+			aa3=document.getElementById("a3").value;
+			aa4=document.getElementById("a4").value;
+			
+			b=document.createElement("div");
+			b.classList.add("s1");
+			
+			c1=document.createElement("div");
+			c1.classList.add("s2");
+			c1.innerHTML=aa1;
+			b.appendChild(c1);
+			
+			c2=document.createElement("div");
+			c2.classList.add("s2");
+			c2.innerHTML=aa2;
+			b.appendChild(c2);
+			
+			c3=document.createElement("div");
+			c3.classList.add("s2");
+			c3.innerHTML=aa3;
+			b.appendChild(c3);
+			
+			c4=document.createElement("div");
+			c4.classList.add("s2");
+			c4.innerHTML=aa4;
+			b.appendChild(c4);
+			
+			document.body.appendChild(b);
+		}
+		function ss1()
+		{
+			e1=document.getElementById("a5").value;
+			e2=document.getElementById("a6").value;
+			e3=document.getElementById("a7").value;
+			e4=document.getElementById("a8").value;
+			d=document.querySelectorAll(".s2");
+			for(i=0;i<d.length;i=i+4)
+				{
+					if(d[i].innerHTML==e1)
+						{
+							d[i+1].innerHTML=e2;
+							d[i+2].innerHTML=e3;
+							d[i+3].innerHTML=e4;
+						}
+				}
+		}
+	</script>
+</body>
+</html>
