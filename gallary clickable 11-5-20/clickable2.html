@@ -1,0 +1,54 @@
+<html>
+<head>
+
+</head>
+<body>
+<img src="Jellyfish.jpg" name="slide" width="600" height="400" />
+<script>
+
+var a=2;
+
+
+function nxt(){
+	if(a==1)
+	{
+		document.images.slide.src="Jellyfish.jpg";
+	}
+	else if(a==2){
+		document.images.slide.src="Koala.jpg";
+	}
+	else{
+		document.images.slide.src="Lighthouse.jpg";
+	}
+if(a<=3){
+
+a++;
+}
+else{
+	a=1;
+	
+}
+}
+
+
+function prev(){
+if(a>1){
+document.images.slide.src=eval("image"+a+".src")
+a--;
+}
+else{
+	a=3;
+	document.images.slide.src=eval("image"+a+".src");
+}
+}
+
+</script>
+<form action="" method="get">
+
+<input type="button" value="nxt" onClick="nxt()">
+<input type="button" value="prev" onClick="prev()">
+
+</form>
+
+</body>
+</html>

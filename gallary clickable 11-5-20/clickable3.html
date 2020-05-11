@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+//-->
+</script>
+</head>
+<body>
+<img src="image1.jpg" name="slide" width="600" height="400" />
+<script>
+
+var a=2;
+
+
+function nxt(){
+if(a<=3){
+	d=document.querySelector("img");
+d.src="image"+a+".jpg";
+a++;
+}
+else{
+	a=1;
+	d=document.querySelector("img");
+d.src="image"+a+".jpg";
+}
+}
+
+
+function prev(){
+if(a>1){
+d=document.querySelector("img");
+d.src="image"+a+".jpg";
+a--;
+}
+else{
+	a=3;
+	d=document.querySelector("img");
+d.src="image"+a+".jpg";
+}
+}
+
+</script>
+<form action="" method="get">
+
+<input type="button" value="nxt" onClick="nxt()">
+<input type="button" value="prev" onClick="prev()">
+
+</form>
+
+</body>
+</html>
