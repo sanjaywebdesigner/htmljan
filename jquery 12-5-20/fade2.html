@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.s1{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border:1px solid black;
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="s1"></div>
+	<input type="button" class="a1" value="fadeOut">
+	<input type="button" class="a2" value="fadeIn">
+	<input type="button" class="a3" value="fadeToggle">
+	<script>
+	$(".a1").click(
+		function(){
+			$(".s1").fadeOut(1000);
+			
+		}
+	);
+	$(".a2").click(
+		function(){
+			$(".s1").fadeIn(1000);
+			
+		}
+	);
+	$(".a3").click(
+		function(){
+			$(".s1").fadeToggle(1000);
+			
+		}
+	);
+			
+	</script>
+</body>
+</html>
+<!--
+$().();
+slideUp
+
+-->

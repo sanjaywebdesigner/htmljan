@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.s1,.s3,.s5{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border:1px solid black;
+		}
+		.s2{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			border:1px solid black;
+		}
+		.s4,.s6{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			display:none;
+			border:1px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="s1"></div>
+	<div class="s2"></div>
+	<div class="s3"></div>
+	<div class="s4"></div>
+	<div class="s5"></div>
+	<div class="s6"></div>
+	<script>
+	$(".s1").click(
+		function(){
+			$(".s2").slideDown(1000);
+			$(".s4").hide();
+			$(".s6").hide();
+		}
+	);
+			$(".s3").click(
+		function(){
+			$(".s4").slideDown(1000);
+			$(".s2").hide();
+			$(".s6").hide();
+		}
+	);
+			$(".s5").click(
+		function(){
+			$(".s6").slideDown(1000);
+			$(".s4").hide();
+			$(".s2").hide();
+		}
+	);
+	</script>
+</body>
+</html>
+<!--
+$().();
+slideUp
+
+-->
