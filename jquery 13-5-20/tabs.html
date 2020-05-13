@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.a1{
+			width:808px;
+			height:51px;
+		}
+		.s1{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border-top:1px solid white;
+			border-left:1px solid white;
+			border-right:1px solid white;
+			float:left;
+			color:white;
+		}
+		.s2{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border-top:1px solid white;
+			border-left:1px solid white;
+			border-right:1px solid white;
+			float:left;
+			color:white;
+		}
+		.s3{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border-top:1px solid white;
+			border-left:1px solid white;
+			border-right:1px solid white;
+			float:left;
+			color:white;
+		}
+		.s4{
+			width:200px;
+			height:50px;
+			background-color:red;
+			border-top:1px solid white;
+			border-left:1px solid white;
+			border-right:1px solid white;
+			float:left;
+			color:white;
+		}
+		.b1{
+			width:808px;
+			height:200px;
+			background-color:green;
+		}
+		.b2{
+			width:808px;
+			height:200px;
+			background-color:blue;
+			display:none;
+		}
+		.b3{
+			width:808px;
+			height:200px;
+			background-color:brown;
+			display:none;
+		}
+		.b4{
+			width:808px;
+			height:200px;
+			background-color:yellow;
+			display:none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="a1">
+		<div class="s1">Home</div>
+		<div class="s2">About</div>
+		<div class="s3">Contact</div>
+		<div class="s4">Services</div>
+	</div>
+	<div class="b1"></div><div class="b2"></div><div class="b3"></div><div class="b4"></div>
+	<script>
+	$(".s1").click(
+		function(){
+			$(".s1").css({"background-color":"green"});
+			$(".s2").css({"background-color":"red"});
+			$(".s3").css({"background-color":"red"});
+			$(".s4").css({"background-color":"red"});
+			$(".b1").fadeIn(1000);
+			$(".b2").hide();
+			$(".b3").hide();
+			$(".b4").hide();
+		}
+	);
+	$(".s2").click(
+		function(){
+			$(".s1").css({"background-color":"red"});
+			$(".s2").css({"background-color":"blue"});
+			$(".s3").css({"background-color":"red"});
+			$(".s4").css({"background-color":"red"});
+			$(".b2").fadeIn(1000);
+			$(".b1").hide();
+			$(".b3").hide();
+			$(".b4").hide();
+		}
+	);
+	$(".s3").click(
+		function(){
+			$(".s1").css({"background-color":"red"});
+			$(".s2").css({"background-color":"red"});
+			$(".s3").css({"background-color":"brown"});
+			$(".s4").css({"background-color":"red"});
+			$(".b3").fadeIn(1000);
+			$(".b2").hide();
+			$(".b1").hide();
+			$(".b4").hide();
+		}
+	);
+	$(".s4").click(
+		function(){
+			$(".s1").css({"background-color":"red"});
+			$(".s2").css({"background-color":"red"});
+			$(".s3").css({"background-color":"red"});
+			$(".s4").css({"background-color":"yellow"});
+			$(".b4").fadeIn(1000);
+			$(".b2").hide();
+			$(".b3").hide();
+			$(".b1").hide();
+		}
+	);
+	
+	
+			
+	</script>
+</body>
+</html>
+<!--
+$().();
+slideUp
+
+-->
