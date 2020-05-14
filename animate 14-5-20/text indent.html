@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("p").animate({textIndent:"30px"});
+  });
+  $(".btn2").click(function(){
+    $("p").animate({textIndent:"0px"});
+  });
+});
+</script>
+</head>
+<body>
+
+<button class="btn1">Animate</button>
+<button class="btn2">Reset</button>
+
+<p>This is a paragraph. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text. This is some more text.</p>
+
+</body>
+</html>

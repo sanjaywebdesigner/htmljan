@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.10.2.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("body").animate({
+    backgroundPositionX:"+=100px", 
+    backgroundPositionY:"+=200px"
+    });
+  });
+  $(".btn2").click(function(){
+    $("body").animate({
+    backgroundPositionX:"0px", 
+    backgroundPositionY:"0px"
+    });
+  });
+});
+</script>
+</head>
+
+<body style="background-image:url(jquery.jpg);background-repeat:no-repeat;position:fixed;">
+
+<button class="btn1">Animate</button>
+<button class="btn2">Reset</button>
+
+</body>
+</html>

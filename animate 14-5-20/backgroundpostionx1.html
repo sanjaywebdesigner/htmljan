@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a1{width:800px;
+        height:800px;
+            background-repeat:no-repeat;}
+    </style>
+    <script src="jquery-1.10.2.min.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $(".a1").animate({
+                    backgroundPositionX:"+=100px",
+                    backgroundPositionY:"+=200px"
+                });
+            });
+            $(".btn2").click(function(){
+                $(".a1").animate({
+                    backgroundPositionX:"0px",
+                    backgroundPositionY:"0px"
+                });
+            });
+            $(".btn3").click(function(){
+                $(".a1").animate({
+                    backgroundPositionX:"-=100px",
+                    backgroundPositionY:"-=200px"
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<button class="btn1">Animate</button>
+<button class="btn2">Reset</button>
+<button class="btn3">Reverse animate</button>
+<div class="a1" style="background-image:url(jquery.jpg);position:fixed;"></div>
+
+</body>
+</html>
