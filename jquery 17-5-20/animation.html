@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.s1{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px;
+		}
+		.s2{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px;
+		}
+		.s3{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px
+		}
+		.s4{
+			width:0px;
+			height:0px;
+			position:absolute;
+			left:600px;
+			top:400px;
+			background-image:url("img1.jpg");
+			background-size:100%;
+		}
+		.s5{
+			width:0px;
+			height:0px;
+			position:absolute;
+			left:600px;
+			top:400px;
+			background-image:url("img2.jpg");
+			background-size:100%;
+		}
+		.s6{
+			width:0px;
+			height:0px;
+			position:absolute;
+			left:600px;
+			top:400px;
+			
+			background-image:url("img3.jpg");
+			background-size:100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="s1"><img src="image1.jpg"></div>
+	<div class="s2"><img src="image2.jpg"></div>
+	<div class="s3"><img src="image3.jpg"></div>
+	
+	<div class="s4"></div>
+		<div class="s5"></div>
+			<div class="s6"></div>
+	</body>
+	<script>
+	$(".s1").click(
+	function()
+		{
+			$(".s4").show();
+			$(".s4").animate({left:"88px",top:"16px",width:"1024px",height:"768px"},1000);
+			$(".s5").hide();
+			$(".s6").hide();
+		}
+	);
+		$(".s2").click(
+	function()
+		{
+			$(".s5").show();
+			$(".s5").animate({left:"88px",top:"16px",width:"1024px",height:"768px"},1000);
+			$(".s6").hide();
+			$(".s4").hide();
+		}
+	);
+		$(".s3").click(
+	function()
+		{
+			$(".s6").show();
+			
+			$(".s6").animate({left:"88px",top:"16px",width:"1024px",height:"768px"},1000);
+			$(".s5").hide();
+			$(".s4").hide();
+		}
+	);
+	</script>
+</html>
