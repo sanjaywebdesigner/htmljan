@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.a1{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px;
+		}
+		.a2{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px;
+		}
+		.a3{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-right:20px;
+		}
+		.b1{
+			width:0px;
+			height:0px;
+			position:absolute;
+			background-image:url("img1.jpg");
+			background-size:100%;
+			left:612px;
+			top:484px;
+		}
+		.b2{
+			width:0px;
+			height:0px;
+			position:absolute;
+			background-image:url("img2.jpg");
+			background-size:100%;
+			left:612px;
+			top:484px;
+		}
+		.b3{
+			width:0px;
+			height:0px;
+			position:absolute;
+			background-image:url("img3.jpg");
+			background-size:100%;
+			left:612px;
+			top:484px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="a1"><img src="image1.jpg"></div>
+	<div class="a2"><img src="image2.jpg"></div>
+	<div class="a3"><img src="image3.jpg"></div>
+	<div class="b1"></div>
+	<div class="b2"></div>
+	<div class="b3"></div>
+	
+	<script>
+	$(".a1").click(
+	function()
+		{
+			$(".b1").animate({width:"1024px",height:"768px",left:"100px",top:"100px"},2000);
+			$(".b2").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			$(".b3").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			
+		}
+	);
+		$(".a2").click(
+	function()
+		{
+			$(".b2").animate({width:"1024px",height:"768px",left:"100px",top:"100px"},2000);
+			$(".b1").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			$(".b3").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			
+		}
+	);
+		$(".a3").click(
+	function()
+		{
+			$(".b3").animate({width:"1024px",height:"768px",left:"100px",top:"100px"},2000);
+			$(".b2").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			$(".b1").animate({width:"0px",height:"0px",left:"612px",top:"484px"},0);
+			
+		}
+	);
+	</script>
+
+</body>
+</html>
