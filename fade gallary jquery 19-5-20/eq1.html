@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	<h1>sanjay</h1>
+	<h1>sanjay1</h1>
+	<h1>sanjay2</h1>
+	<h1>sanjay3</h1>
+	<h1>sanjay4</h1>
+	<h1>sanjay5</h1>
+	<input type="button" value="click me">
+	<script>
+	$("input").click(
+	function()
+		{
+			$("h1:eq(2)").hide(1000);
+		}
+	);
+	</script>
+</body>
+</html>
