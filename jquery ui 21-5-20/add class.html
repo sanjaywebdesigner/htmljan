@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+		
+		.c1{
+			background-color:red;
+		}
+	</style>
+</head>
+
+<body>
+<div id="a1">sanjay jain<br>deepak</div>
+	<input type="button" id="b1" value="add">
+	<input type="button" id="b2" value="remove">
+	<script>
+	$("#b1").click(
+	function()
+		{
+			$("#a1").addClass("c1");
+		}
+	);
+		$("#b2").click(
+	function()
+		{
+			$('#a1').removeClass("c1")
+		}
+	);
+	</script>
+</body>
+</html>

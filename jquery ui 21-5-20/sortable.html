@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
+<style>  
+      #sortable-1 { list-style-type: none; margin: 0;   
+         padding: 0; width: 25%; }  
+      #sortable-1 li { margin: 0 3px 3px 3px; padding: 0.4em;   
+         padding-left: 1.5em; font-size: 17px; height: 16px; }  
+      .default {  
+         background: lightgreen;  
+         border: 1px solid #DDDDDD;  
+         color: #333333;  
+      }  
+   </style>  
+   <script>  
+      $(function() {  
+         $( "#sortable-1" ).sortable();  
+      });  
+   </script>  
+</head>  
+<body>  
+<h1> Courses Available at JavaTpoint</h1>  
+   <ul id="sortable-1">  
+      <li class="default">Java/J2EE</li>  
+      <li class="default">.NET</li>  
+      <li class="default">SQL</li>  
+      <li class="default">PHP</li>  
+      <li class="default">Android</li>  
+      <li class="default">C/C++</li>  
+      <li class="default">jQuery</li>  
+   </ul>  
+</body>
+</html>

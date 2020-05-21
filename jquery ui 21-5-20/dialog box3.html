@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+<link href="jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+   <button id="sanjay">click!</button>  
+      <div id="sanjay1" title="sanjay jain">"sanjay web designer" </div>
+<script>  
+         $(function(){  
+            $("#sanjay").click(function() {  
+          
+               ($("#sanjay1").dialog("isOpen") == false) ? $("#sanjay1").dialog("open") : $("#sanjay1").dialog("close") ;  
+            });  
+            $("#sanjay1").dialog({autoOpen: false});  
+         });    
+      </script>
+</body>
+</html>
