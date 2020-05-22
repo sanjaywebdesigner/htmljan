@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	<style>
+		.a3{
+			position:absolute;
+			top:100px;
+			left:200px;
+			display:none;
+		}
+		.a2{
+			position:absolute;
+			top:250px;
+			left:450px;
+			width:0;
+			height:0;
+			background-color:red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="a1"><img src="img2.jpg"></div>
+	<div class="a2"></div>
+	<div class="a3"><img src="img1.jpg"></div>
+	<script>  
+ 		$(".a1").click(
+ 		function()
+			{
+		$(".a2").animate({width:"500px",height:"300px",left:"200px",top:"100px"},1000);
+		 $(".a3").delay(1000).fadeIn();
+	 }
+ );
+          
+    
+</script>
+</body>
+</html>
