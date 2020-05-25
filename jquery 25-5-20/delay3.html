@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script src="jquery-3.4.1.js"></script>
+	  <style>  
+		  .a1{
+			  width:100px;
+			  height:100px;
+			  background-color:red;
+			  position:relative;
+		  }
+		   .a2{
+			  width:100px;
+			  height:100px;
+			  background-color:green;
+			  position:relative;
+		  }
+		  
+  </style>  
+</head>
+
+<body>
+	<div class="a1"></div><br> 
+	<div class="a2"></div><br> 
+	
+	<script>  
+ 
+    $(document).ready(
+	function()
+		{
+		setInterval(ss,8000);	
+}
+	);
+	function ss()	
+		{
+			$(".a1").animate({left:"400px"},1000);
+			$(".a1").animate({top:"400px"},1000);
+			$(".a1").animate({left:"0px"},1000);
+			$(".a1").animate({top:"0px"},1000);
+			$(".a2").delay(4000).animate({left:"400px"},1000);
+			$(".a2").animate({top:"400px"},1000);
+			$(".a2").animate({left:"0px"},1000);
+			$(".a2").animate({top:"0px"},1000);
+			
+		}
+    
+</script>
+</body>
+</html>
