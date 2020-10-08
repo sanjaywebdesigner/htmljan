@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.scrollup {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0px;
+    display: none;
+  
+    background-color: #000;
+}
+</style>
+</head>
+
+<body>
+<h1>Top of the page</h1>
+
+<article style="height: 1000px">
+    <p style="margin-bottom: 600px">Scroll down the page&hellip;</p>
+    <p>Then click the box.</p>
+    <a href="#" class="scrollup"></a>
+</article>
+<script src="jquery-1.11.2.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
+</body>
+</html>
